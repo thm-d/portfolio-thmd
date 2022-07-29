@@ -1,0 +1,63 @@
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.blur {
+  filter: blur(2px);
+  transition: 1.5s;
+}
+
+.no-blur {
+  filter: blur(0);
+  transition: 1.5s;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+// .no-z-index1 {
+//   z-index: 0;
+// }
+
+.c-1 {
+  color: var(--blue);
+}
+.c-2 {
+  color: var(--water-green);
+}
+.c-3 {
+  color: var(--green);
+}
+.c-4 {
+  color: var(--purple);
+}
+.c-5 {
+  color: var(--red);
+}
+.c-6 {
+  color: var(--orange);
+}
+.c-7 {
+  color: white;
+}
+.c-8 {
+  color: var(--yellow);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2.1rem;
+  line-height: 4rem;
+  text-align: center;
+  width: 4.2rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+  margin: 0 0.8rem;
+}

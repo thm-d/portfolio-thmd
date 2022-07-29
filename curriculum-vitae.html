@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="Hello, je suis Thomas et vous pouvez ici découvrir une partie de mon travail avec la réalisation de mon curriculum vitae. J'espère que vous apprécierez le travail que j'y ai effectué. Have fun !"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/scss-cv/style.css" rel="stylesheet" />
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/03c78e0142.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <title>Curriculum Vitae | Thomas Dauriac</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>
+          <span>Thomas Dauriac</span>
+        </h1>
+        <p>Développeur Web Junior</p>
+      </header>
+
+      <section class="picture">
+        <img alt="Photo" src="./assets/picture_cv.png" />
+      </section>
+
+      <aside>
+        <div class="block">
+          <h2 class="title-small">CONTACT</h2>
+          <h3>Téléphone</h3>
+          <p>06 78 66 84 31</p>
+          <h3>Email</h3>
+          <p>thomas.dauriac@gmail.com</p>
+          <h3>Adresse</h3>
+          <p>
+            3 rue Paul Cavaré <br />
+            93110 - Rosny-Sous-Bois
+          </p>
+        </div>
+
+        <div class="block">
+          <h2 class="title-small">SKILLS</h2>
+          <h3>HTML / CSS / SASS</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress bsp-90"></div>
+            <div class="bar-skill-dot bsd-90"></div>
+          </div>
+          <h3>JAVASCRIPT</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress bsp-80"></div>
+            <div class="bar-skill-dot bsd-80"></div>
+          </div>
+          <h3>ReactJS (in progress)</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress bsp-40"></div>
+            <div class="bar-skill-dot bsd-40"></div>
+          </div>
+          <h3>TypeScript (in progress)</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress bsp-25"></div>
+            <div class="bar-skill-dot bsd-25"></div>
+          </div>
+          <h3>NodeJS (in progress)</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress bsp-25"></div>
+            <div class="bar-skill-dot bsd-25"></div>
+          </div>
+          <h3>PYTHON / DJANGO</h3>
+          <div class="bar-skill">
+            <div class="bar-skill-progress bsp-60"></div>
+            <div class="bar-skill-dot bsd-60"></div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="title-small">LANGUAGES</h2>
+          <h3>FRANCAIS</h3>
+          <div class="stars-container">
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+          </div>
+          <h3>ANGLAIS</h3>
+          <div class="stars-container">
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="title-small">SOCIAL</h2>
+          <a href="./"
+            ><div class="social-container">
+              <i><i class="fa-solid fa-folder-open"></i></i>
+              <p>Portfolio</p>
+            </div></a
+          >
+          <a href="https://github.com/thm-d" target="_blank"
+            ><div class="social-container">
+              <i><i class="fa-brands fa-github-square"></i></i>
+              <p>Github</p>
+            </div></a
+          >
+          <a
+            href="https://www.linkedin.com/in/thomas-dauriac-8a000a239/"
+            target="_blank"
+          >
+            <div class="social-container">
+              <i><i class="fa-brands fa-linkedin"></i></i>
+              <p>LinkedIn</p>
+            </div></a
+          >
+          <a href="https://aws.amazon.com/fr/" target="_blank"
+            ><div class="social-container no-pointer">
+              <i class="fa-brands fa-aws"></i>
+              <p>Amazon Web Services</p>
+            </div></a
+          >
+        </div>
+
+        <div class="block">
+          <h2 class="title-small">HOBBIES</h2>
+          <p class="divers">Escalade</p>
+          <p class="divers">Plongée</p>
+          <p class="divers">Trail & Randonnée</p>
+          <p class="divers">Musique</p>
+        </div>
+      </aside>
+
+      <main>
+        <h2 class="title-small">PROFIL PROFESSIONNEL</h2>
+        <p class="mb-5">
+          Au cours de ma vie, j'ai pu faire face à de nombreux challenges et
+          expériences professionnelles qui ont façonné ma personnalité. <br />
+          Aujourd'hui, je fais le choix de sortir d'une zone de confort dans
+          laquelle j'étais installé afin d'écrire un nouveau chapitre de ma vie,
+          au travers d'une reconversion dans le développement web. <br />
+          J'ai conscience que cette nouvelle aventure nécessite de manière
+          permanente adaptation, persévérance, remise en question et curiosité
+          mais ce sont bien là des valeurs qui m'animent en tout point. <br />
+          À présent, je serai donc ravi d'avoir l'occasion d'évoluer en stage
+          afin de poursuivre ma courbe d'apprentissage en collaboration avec une
+          équipe professionnelle dont je pourrai à l'avenir m'inspirer pour
+          poursuivre ma progression dans ce nouveau milieu aux mille
+          possibilités.
+        </p>
+
+        <h2 class="title-small">FORMATION ACTUELLE</h2>
+        <div class="experience">
+          <div class="timeline">
+            <p>
+              2021 <br />
+              - <br />
+              2022
+            </p>
+          </div>
+          <div class="content">
+            <h3>Développeur Web Junior</h3>
+            <p class="text-light mb-2">
+              Digital Campus Live
+              <a href="https://www.studi.fr" target="_blank">STUDI</a>
+              (Formation distancielle)
+            </p>
+            <p>
+              Cette structure d'apprentissage que je pratique à temps plein
+              aujourd'hui me permet d'acquérir une multitude de connaissances
+              sur l'univers du développement web. <br />
+              Par ailleurs, je consacre également une autre grande partie de mon
+              temps à l'exploration et la veille informatique pour l'acquisition
+              de nouvelles compétences via d'autres sources de formation.
+            </p>
+            <ul>
+              <li>
+                Étude d'autres technologies en lien avec ma formation :
+                <span>PHP (Symfony), React Native, SQL, Wordpress</span>
+              </li>
+              <li>
+                IDE utilisées :
+                <span>WebStorm, PyCharm, Visual Studio Code</span>
+              </li>
+              <li>
+                Mise en place et sensibilité à la responsivité des différents
+                projets initiés (mobile-first)
+              </li>
+              <li><a href="./">PORTFOLIO (Powered by AWS)</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="title-small">EXPÉRIENCES PROFESSIONNELLES</h2>
+        <div class="experience">
+          <div class="timeline">
+            <p>
+              2013 <br />
+              - <br />
+              2021
+            </p>
+          </div>
+          <div class="content">
+            <h3>Opticien Lunetier</h3>
+            <p class="text-light mb-2">
+              Les Opticiens du Bac - <span>Paris 7ème</span>
+            </p>
+            <p>
+              Design et conception lunetterie <br />
+              Manipulation des matériaux rares : corne, bois, cuir
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="timeline">
+            <p>
+              2009 <br />
+              - <br />
+              2013
+            </p>
+          </div>
+          <div class="content">
+            <h3>Opticien Lunetier</h3>
+            <p class="text-light mb-2">
+              Optic 2000 - <span>Rosny-Sous-Bois (93)</span>
+            </p>
+            <p>
+              2012 : Diplôme Universitaire de Contactologie obtenu à la Faculté
+              des Sciences d'Orsay (91) <br />
+              2011 : Diplôme Universitaire de Optométrie obtenu à la Faculté des
+              Sciences d'Orsay (91)
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="timeline">
+            <p>
+              2007 <br />
+              - <br />
+              2009
+            </p>
+          </div>
+          <div class="content">
+            <h3>Monteur-Vendeur | Alternance</h3>
+            <p class="text-light mb-2">
+              Forum Optic - <span>Vincennes (94)</span>
+            </p>
+            <p>2009 : BTS Opticien Lunetier obtenu à l'ISO Paris (75)</p>
+            <ul></ul>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <h2 class="title-small">
+          <i class="fa-regular fa-envelope-open prefix"></i> POUR ÊTRE
+          RECONTACTER
+        </h2>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" />
+          <input type="text" name="user_name" placeholder="Votre nom" />
+          <input type="email" name="user_email" placeholder="Votre email" />
+          <textarea name="message" placeholder="Votre message..."></textarea>
+          <button class="success-form" type="submit">
+            <i class="fa-regular fa-paper-plane postfix"></i>
+          </button>
+        </form>
+      </footer>
+    </div>
+
+    <script src="./mailForm.js"></script>
+  </body>
+</html>

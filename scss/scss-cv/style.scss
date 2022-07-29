@@ -1,0 +1,381 @@
+@import "reset";
+@import "base";
+@import "utils";
+@import "classes";
+@import "animations";
+@import "media-queries";
+@import "variables";
+
+.grid-container {
+  display: grid;
+  grid:
+    "picture header" auto
+    "aside main" 1fr
+    "footer footer" auto
+    / 350px auto;
+  min-height: 100vh;
+  @include xs {
+    grid:
+      "header" auto
+      "picture" 1fr
+      "main" auto
+      "aside" auto
+      "footer" auto
+      / auto;
+  }
+  @include sm {
+    grid:
+      "header" auto
+      "picture" 1fr
+      "main" auto
+      "aside" auto
+      "footer" auto
+      / auto;
+  }
+}
+
+header {
+  grid-area: header;
+  background: linear-gradient(to right, var(--primary), var(--light));
+  padding: 8rem 5rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include xs {
+    padding: 5rem 2rem;
+  }
+  @include sm {
+    padding: 5rem 2rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    @include xs {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+    @include sm {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: var(--secondary);
+  }
+
+  span {
+    display: inline-block;
+    animation: bounce-cv 2.5s ease-in-out;
+  }
+}
+
+.picture {
+  grid-area: picture;
+  padding: 4rem 8rem;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  @include xs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 50%;
+    filter: grayscale(80%);
+    box-shadow: 1px 1px 3px rgba(33, 33, 33, 0.5);
+  }
+}
+
+aside {
+  grid-area: aside;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  padding: 5rem 6rem 6rem;
+  height: auto;
+  @include xs {
+    padding: 4rem;
+  }
+  @include sm {
+    padding: 5rem 8rem;
+  }
+
+  .block {
+    margin-bottom: 5rem;
+
+    h3 {
+      margin-bottom: 0;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0 0 2rem 0;
+      font-style: italic;
+    }
+
+    .divers {
+      margin: 0 0 1rem 0;
+    }
+
+    .bar-skill {
+      margin: 1.6rem 0;
+      height: 0.5rem;
+      background: var(--hint);
+      border-radius: 5px;
+      position: relative;
+
+      .bar-skill-progress {
+        position: absolute;
+        border-radius: 5px;
+        height: 0.5rem;
+        background: var(--light);
+      }
+
+      .bar-skill-dot {
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        background: var(--primary);
+        top: -2.5px;
+        border-radius: 50%;
+      }
+    }
+
+    .stars-container {
+      display: flex;
+      margin: 2rem 0 3rem 0;
+      color: var(--hint);
+
+      i {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+      }
+    }
+
+    .social-container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 1rem 1rem;
+      border-radius: 5px;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      .no-pointer {
+        cursor: crosshair;
+      }
+
+      &:hover {
+        background: var(--border);
+
+        i {
+          color: var(--light);
+          transform: scale(1.2) translate(1px);
+          transition: all 0.4s;
+        }
+      }
+
+      i {
+        font-size: 2rem;
+        flex: 0 0 50px;
+        margin-right: 1rem;
+      }
+
+      p {
+        flex: auto;
+        margin: 0;
+      }
+    }
+  }
+}
+
+main {
+  grid-area: main;
+  padding: 5rem;
+  @include xs {
+    padding: 5rem 2rem;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  p {
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+  }
+
+  .experience {
+    display: flex;
+    margin: 6rem 0;
+  }
+
+  .timeline {
+    text-align: center;
+    color: var(--light);
+    padding-right: 2rem;
+    border-right: 1px solid var(--border);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .content {
+    padding: 0 1rem;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      a {
+        color: var(--ligth);
+        font-weight: 700;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      span {
+        font-style: italic;
+        color: var(--hint);
+      }
+    }
+
+    ul {
+      margin: 2rem 0;
+      list-style: circle;
+      padding-left: 4rem;
+
+      li {
+        margin-bottom: 0.8rem;
+        font-style: italic;
+        a {
+          color: #ff5252;
+          font-weight: 700;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        span {
+          color: var(--primary);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5rem;
+  @include xs {
+    padding: 4rem 2rem;
+  }
+  @include sm {
+    padding: 5rem 2rem;
+  }
+  background: var(--text);
+
+  h2 {
+    margin: 0 0 3rem;
+  }
+
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .prefix {
+      background: linear-gradient(to right, var(--light), var(--primary));
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 2rem;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    button {
+      border: 0;
+      background: var(--text);
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      .postfix {
+        background: linear-gradient(to right, var(--light), var(--primary));
+        padding: 1rem 2rem;
+        color: white;
+        width: 100%;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+      }
+    }
+
+    input,
+    textarea {
+      min-width: 550px;
+      @include sm {
+        min-width: 400px;
+      }
+      @include xs {
+        min-width: 250px;
+      }
+      margin: 0 0 2rem;
+      padding: 1rem 2rem;
+      border: 0;
+      border-radius: 0.5rem;
+      line-height: 2rem;
+      outline: 0;
+
+      &::placeholder {
+        color: var(--text);
+        font-family: var(--font-family);
+      }
+    }
+    textarea {
+      min-height: 100px;
+      max-height: 100px;
+      max-width: 550px;
+      margin-bottom: 2rem;
+      @include sm {
+        min-width: 400px;
+        max-width: 400px;
+      }
+      @include xs {
+        min-width: 250px;
+        max-width: 250px;
+      }
+    }
+    .success {
+      margin-top: 1rem;
+    }
+  }
+}

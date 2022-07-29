@@ -1,0 +1,151 @@
+@import "variables";
+@import "utils";
+@import "reset";
+@import "media-queries";
+@import "classes";
+@import "base";
+@import "animation";
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 1.5vh;
+  font-family: var(--font-family);
+  box-shadow: var(--box-shadow);
+  width: calc(50% - 3vh);
+  background: var(--light);
+  @include lg {
+    width: calc(40% - 3vh);
+  }
+
+  @include sm {
+    width: calc(100% - 3vh);
+    height: 36rem;
+    position: static;
+    margin: 1.5vh;
+  }
+  @include xs {
+    min-width: 32rem;
+  }
+  .content-header {
+    h1 {
+      font-size: 8rem;
+      color: var(--background);
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #fff;
+      width: auto;
+      .animation {
+        display: inline-block;
+        animation: bounce 2.5s ease-in-out;
+      }
+    }
+    h2 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2.5rem;
+      transition: 0.4s;
+      .btn {
+        color: black;
+        &:hover {
+          background: var(--yellow);
+          transition: 0.4s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  border: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  min-height: 100vh;
+  @include sm {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    min-height: 100%;
+  }
+  @include xs {
+    min-width: 32rem;
+  }
+  .code-json {
+    display: block;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 4rem 1rem;
+    height: auto;
+    background: var(--background);
+    color: var(--yellow);
+    width: 50%;
+    counter-reset: a;
+    @include lg {
+      width: 60%;
+    }
+    @include md {
+      width: 60%;
+    }
+    @include sm {
+      width: 100%;
+    }
+    .code-line {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      counter-increment: a;
+      position: relative;
+      margin-left: 3.2rem;
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+      @include xs {
+        font-size: 1.3rem;
+      }
+      &:before {
+        content: counter(a);
+        color: var(--base-json);
+        position: absolute;
+        width: 20px;
+        left: -27px;
+        overflow: hidden;
+        text-align: right;
+      }
+      .tab {
+        opacity: 0.35;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        flex: 0 0 auto;
+        color: var(--base-json);
+        &:before {
+          content: "············";
+          display: inline-block;
+          min-width: 30px;
+          position: absolute;
+          overflow: hidden;
+        }
+      }
+      .link {
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+      }
+      .hidden {
+        opacity: 0;
+      }
+    }
+  }
+}

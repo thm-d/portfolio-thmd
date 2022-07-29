@@ -1,0 +1,18 @@
+.title {
+  &-small {
+    letter-spacing: 0.5rem;
+    font-size: 1.7rem;
+  }
+}
+
+.text {
+  &-primary {
+    color: var(--primary);
+  }
+  &-secondary {
+    color: var(--secondary);
+  }
+  &-light {
+    color: var(--light);
+  }
+}
