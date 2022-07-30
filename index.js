@@ -7,22 +7,10 @@ const project05 = document.querySelector(".project05");
 const project06 = document.querySelector(".project06");
 
 let projects = [
-  // {
-  //   title: "Curriculum vitae",
-  //   display: false,
-  //   link: "https://meek-tapioca-2b8a08.netlify.app",
-  //   img: "https://images.unsplash.com/photo-1658144492483-912cc8f969b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-  //   content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-  //       quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-  //       temporibus autem odit, libero nam enim maiores, quas sint. In error,
-  //       accusantium ea consectetur facere consequatur, asperiores amet
-  //       distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-  //       consequuntur vero dicta tempore impedit exercitationem!`,
-  // },
   {
     title: "Bar à Vins",
     display: false,
-    link: "https://meek-tapioca-2b8a08.netlify.app",
+    link: "https://thomas-dauriac.fr/wine-bar",
     img: "https://images.unsplash.com/photo-1658176561417-7ae088c88994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
         quod totam repellat! Corrupti maxime voluptate atque iste assumenda
@@ -34,8 +22,20 @@ let projects = [
   {
     title: "Climb Gr",
     display: false,
-    link: "https://meek-tapioca-2b8a08.netlify.app",
+    link: "https://thomas-dauriac.fr/climbgr",
     img: "https://images.unsplash.com/photo-1658217456399-8e5cf10c128a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+      quod totam repellat! Corrupti maxime voluptate atque iste assumenda
+      temporibus autem odit, libero nam enim maiores, quas sint. In error,
+      accusantium ea consectetur facere consequatur, asperiores amet
+      distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
+      consequuntur vero dicta tempore impedit exercitationem!`,
+  },
+  {
+    title: "Bloblog News",
+    display: false,
+    link: "https://thomas-dauriac.fr/bloblog-news",
+    img: "https://images.unsplash.com/photo-1659183572769-a22124c4c97e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
     content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
       quod totam repellat! Corrupti maxime voluptate atque iste assumenda
       temporibus autem odit, libero nam enim maiores, quas sint. In error,
@@ -46,7 +46,7 @@ let projects = [
   {
     title: "Blog Vanilla JS",
     display: false,
-    link: "https://meek-tapioca-2b8a08.netlify.app",
+    link: "https://thomas-dauriac.fr/blog-vanilla-js",
     img: "https://images.unsplash.com/photo-1658225595905-7bd75d10a265?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
       quod totam repellat! Corrupti maxime voluptate atque iste assumenda
@@ -58,7 +58,7 @@ let projects = [
   {
     title: "ToDo",
     display: false,
-    link: "https://meek-tapioca-2b8a08.netlify.app",
+    link: "https://thomas-dauriac.fr/todo",
     img: "https://images.unsplash.com/photo-1658137377207-c9bea7240457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
       quod totam repellat! Corrupti maxime voluptate atque iste assumenda
@@ -70,7 +70,7 @@ let projects = [
   {
     title: "Blog Django",
     display: false,
-    link: "https://meek-tapioca-2b8a08.netlify.app",
+    link: "https://thomas-dauriac.fr/django-blog",
     img: "https://images.unsplash.com/photo-1658223255517-6a0b475fdd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
     content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
       quod totam repellat! Corrupti maxime voluptate atque iste assumenda
@@ -85,7 +85,14 @@ const body = document.querySelector("body");
 let calc;
 let modal;
 
-const array = [project01, project02, project03, project04, project05];
+const array = [
+  project01,
+  project02,
+  project03,
+  project04,
+  project05,
+  project06,
+];
 
 const container = document.querySelector(".container");
 
