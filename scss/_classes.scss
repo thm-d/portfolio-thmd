@@ -26,8 +26,6 @@
     @include lg {
       margin: 10rem;
     }
-    @include md {
-    }
     @include sm {
       min-width: 30rem;
       margin: 6rem;
@@ -37,15 +35,24 @@
     }
     h2 {
       font-size: 4rem;
+      font-family: var(--font-family2);
     }
     img {
       border-radius: 0.3rem;
       margin-bottom: 2rem;
       box-shadow: var(--box-shadow);
+      max-width: 350px;
+      @include md {
+        max-width: 275px;
+      }
+      @include xs {
+        max-width: 200px;
+      }
     }
     p {
       width: 80%;
       margin-bottom: 3rem;
+      font-family: var(--font-family2);
     }
     .btn {
       display: inline-block;

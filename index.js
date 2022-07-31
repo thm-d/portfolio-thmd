@@ -11,88 +11,59 @@ let projects = [
     title: "Bar à Vins",
     display: false,
     link: "http://thomas-dauriac.fr/wine-bar",
-    img: "https://images.unsplash.com/photo-1658176561417-7ae088c88994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-        quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-        temporibus autem odit, libero nam enim maiores, quas sint. In error,
-        accusantium ea consectetur facere consequatur, asperiores amet
-        distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-        consequuntur vero dicta tempore impedit exercitationem!`,
+    img: "./assets/wine-bar.jpg",
+    content: `Ce premier projet en partie responsive m'a permis d'explorer et de pratiquer activement le html et le css dans ses versions les plus simples. 
+    J'ai pu y manipuler du float pour le placement de certains éléments, même si aujourd'hui, nous disposons d'outils plus puissants comme le flex et le grid.`,
   },
   {
     title: "Climb Gr",
     display: false,
     link: "http://thomas-dauriac.fr/climbgr",
-    img: "https://images.unsplash.com/photo-1658217456399-8e5cf10c128a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-      quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-      temporibus autem odit, libero nam enim maiores, quas sint. In error,
-      accusantium ea consectetur facere consequatur, asperiores amet
-      distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-      consequuntur vero dicta tempore impedit exercitationem!`,
+    img: "./assets/climb-gr.jpg",
+    content: `Pour ce deuxième projet, encore en partie responsive, j'y pratique une nouvelle fois du html & css mais cette fois ci en utilisant les flex qui permettent une mise en place plus efficace du layout.
+    J'ai pu continuer à travailler ma gestion de l'organisation du code en essayant de structurer celui ci d'une manière la plus pratique possible.`,
   },
   {
     title: "Bloblog News",
     display: false,
     link: "http://thomas-dauriac.fr/bloblog-news",
-    img: "https://images.unsplash.com/photo-1659183572769-a22124c4c97e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-      quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-      temporibus autem odit, libero nam enim maiores, quas sint. In error,
-      accusantium ea consectetur facere consequatur, asperiores amet
-      distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-      consequuntur vero dicta tempore impedit exercitationem!`,
-  },
-  {
-    title: "Blog Vanilla JS",
-    display: false,
-    link: "http://thomas-dauriac.fr/blog-vanilla-js",
-    img: "https://images.unsplash.com/photo-1658225595905-7bd75d10a265?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-      quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-      temporibus autem odit, libero nam enim maiores, quas sint. In error,
-      accusantium ea consectetur facere consequatur, asperiores amet
-      distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-      consequuntur vero dicta tempore impedit exercitationem!`,
+    img: "./assets/bloblog-news.jpg",
+    content: `Ce troisième projet m'a été utile pour m'améliorer sur l'aspect layout.
+    Plus complexe que les deux premiers projets, j'ai principalement pu apprendre à composer avec le flex et le grid.
+    J'ai une nouvelle fois pu y travailler la responsivité.`,
   },
   {
     title: "ToDo",
     display: false,
     link: "http://thomas-dauriac.fr/todo",
-    img: "https://images.unsplash.com/photo-1658137377207-c9bea7240457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-      quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-      temporibus autem odit, libero nam enim maiores, quas sint. In error,
-      accusantium ea consectetur facere consequatur, asperiores amet
-      distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-      consequuntur vero dicta tempore impedit exercitationem!`,
+    img: "./assets/todo.jpg",
+    content: `Pour ce projet ToDo, le javascript m'offre de nouvelles possibilités. 
+    J'ai pu ici manipuler le DOM, par la création d'une "ToDo List" sur laquelle vous pourrez tester un panel de quelques fonctionnalités. 
+    De plus, j'ai pu commencer à travailler une configuration projet avec Webpack et Babel plus en adéquation avec celle retrouvée en milieu professionnel.`,
   },
   {
-    title: "Blog Django",
+    title: "Blog Vanilla JS",
     display: false,
-    link: "http://thomas-dauriac.fr/django-blog",
-    img: "https://images.unsplash.com/photo-1658223255517-6a0b475fdd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-      quod totam repellat! Corrupti maxime voluptate atque iste assumenda
-      temporibus autem odit, libero nam enim maiores, quas sint. In error,
-      accusantium ea consectetur facere consequatur, asperiores amet
-      distinctio eaque repellat perferendis libero obcaecati nihil. Repellat
-      consequuntur vero dicta tempore impedit exercitationem!`,
+    link: "http://thomas-dauriac.fr/blog-vanilla-js",
+    img: "./assets/blog-vanilla-js.jpg",
+    content: `Lors de ce projet blog, un peu plus complexe à mettre en place, j'ai pu toujours avec Webpack et Babel m'initier à structurer mon project de manière plus professionnelle, en séparant mon code dans plusieurs fichiers afin de le rendre plus facile à maintenir.
+    De plus, j'ai pu m'exercer au css avec sass et j'ai fait le choix de rester sur du javascript natif afin de bien en comprendre les mécanismes, avant de me lancer tête baissée sur les différents frameworks à disposition.`,
   },
+  // {
+  //   title: "Blog Django",
+  //   display: false,
+  //   link: "http://thomas-dauriac.fr/django-blog",
+  //   img: "https://images.unsplash.com/photo-1658223255517-6a0b475fdd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+  //   content: `Ce dernier projet est un peu différent, j'ai pu y pratiquer le langage Python avec l'aide d'un de ces frameworks bien connu, à savoir Django.
+  //   Cela m'a permis aussi de travailler un langage différent de celui que j'utilise en général et d'étendre un peu plus mon champ des possibilités.`,
+  // },
 ];
 
 const body = document.querySelector("body");
 let calc;
 let modal;
 
-const array = [
-  project01,
-  project02,
-  project03,
-  project04,
-  project05,
-  project06,
-];
+const array = [project01, project02, project03, project04, project05];
 
 const container = document.querySelector(".container");
 

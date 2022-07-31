@@ -14,6 +14,7 @@
   --orange: #f68d6c;
   --red: #ff5252;
   --font-family: "Dancing Script", cursive;
+  --font-family2: "Edu TAS Beginner", cursive;
   --box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
     0 1px 3px 1px rgb(60 64 67 / 15%);
 }
@@ -136,15 +137,28 @@
 }
 .calc .modal h2 {
   font-size: 4rem;
+  font-family: var(--font-family2);
 }
 .calc .modal img {
   border-radius: 0.3rem;
   margin-bottom: 2rem;
   box-shadow: var(--box-shadow);
+  max-width: 350px;
+}
+@media (max-width: 1000px) {
+  .calc .modal img {
+    max-width: 275px;
+  }
+}
+@media (max-width: 480px) {
+  .calc .modal img {
+    max-width: 200px;
+  }
 }
 .calc .modal p {
   width: 80%;
   margin-bottom: 3rem;
+  font-family: var(--font-family2);
 }
 .calc .modal .btn {
   display: inline-block;
