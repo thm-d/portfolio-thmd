@@ -35,7 +35,7 @@ let projects = [
   {
     title: "ToDo",
     display: false,
-    link: "http://thomas-dauriac.fr/todo",
+    link: "http://thomas-dauriac.fr:4001",
     img: "./assets/todo.jpg",
     content: `Pour ce projet ToDo, le javascript m'offre de nouvelles possibilités. 
     J'ai pu ici manipuler le DOM, par la création d'une "ToDo List" sur laquelle vous pourrez tester un panel de quelques fonctionnalités. 
@@ -44,7 +44,7 @@ let projects = [
   {
     title: "Blog Vanilla JS",
     display: false,
-    link: "http://thomas-dauriac.fr/blog-vanilla-js",
+    link: "http://thomas-dauriac.fr:4000",
     img: "./assets/blog-vanilla-js.jpg",
     content: `Lors de ce projet blog, un peu plus complexe à mettre en place, j'ai pu toujours avec Webpack et Babel m'initier à structurer mon project de manière plus professionnelle, en séparant mon code dans plusieurs fichiers afin de le rendre plus facile à maintenir.
     De plus, j'ai pu m'exercer au css avec sass et j'ai fait le choix de rester sur du javascript natif afin de bien en comprendre les mécanismes, avant de me lancer tête baissée sur les différents frameworks à disposition.`,
