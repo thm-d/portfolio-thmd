@@ -49,21 +49,30 @@ let projects = [
     content: `Lors de ce projet blog, un peu plus complexe à mettre en place, j'ai pu toujours avec Webpack et Babel m'initier à structurer mon project de manière plus professionnelle, en séparant mon code dans plusieurs fichiers afin de le rendre plus facile à maintenir.
     De plus, j'ai pu m'exercer au css avec sass et j'ai fait le choix de rester sur du javascript natif afin de bien en comprendre les mécanismes, avant de me lancer tête baissée sur les différents frameworks à disposition.`,
   },
-  // {
-  //   title: "Blog Django",
-  //   display: false,
-  //   link: "http://thomas-dauriac.fr/django-blog",
-  //   img: "https://images.unsplash.com/photo-1658223255517-6a0b475fdd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-  //   content: `Ce dernier projet est un peu différent, j'ai pu y pratiquer le langage Python avec l'aide d'un de ces frameworks bien connu, à savoir Django.
-  //   Cela m'a permis aussi de travailler un langage différent de celui que j'utilise en général et d'étendre un peu plus mon champ des possibilités.`,
-  // },
+  {
+    title: "Snake",
+    display: false,
+    link: "http://thomas-dauriac.fr:3310",
+    img: "https://images.unsplash.com/photo-1658223255517-6a0b475fdd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    content: `Génération 2000, on a sans doute tous connu le Nokia 3310 et son jeu emblématique du serpent. 
+    Ce petit projet m'a permis de continuer à éveiller ma logique de programmation et de manipuler de plus près l'API Canvas, bien utile ici.
+    Le jeu s'adaptera à tous les tailles d'écrans et j'espère que vous amuserez bien quelques minutes.
+    À vos claviers, ENJOY !!`,
+  },
 ];
 
 const body = document.querySelector("body");
 let calc;
 let modal;
 
-const array = [project01, project02, project03, project04, project05];
+const array = [
+  project01,
+  project02,
+  project03,
+  project04,
+  project05,
+  project06,
+];
 
 const container = document.querySelector(".container");
 
