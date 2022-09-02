@@ -53,9 +53,9 @@ let projects = [
     title: "Snake",
     display: false,
     link: "http://thomas-dauriac.fr:3310",
-    img: "https://images.unsplash.com/photo-1658223255517-6a0b475fdd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    img: "./assets/snake.jpg",
     content: `Génération 2000, on a sans doute tous connu le Nokia 3310 et son jeu emblématique du serpent. 
-    Ce petit projet m'a permis de continuer à éveiller ma logique de programmation et de manipuler de plus près l'API Canvas, bien utile ici.
+    Ce petit projet <strong>(version desktop)</strong> m'a permis de continuer à éveiller ma logique de programmation et de manipuler de plus près l'API Canvas, bien utile ici.
     Le jeu s'adaptera à tous les tailles d'écrans et j'espère que vous amuserez bien quelques minutes.
     À vos claviers, ENJOY !!`,
   },

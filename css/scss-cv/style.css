@@ -18,7 +18,12 @@ p {
   margin: 1rem 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1rem 0 2rem 0;
 }
 
@@ -59,12 +64,28 @@ img {
   width: 80%;
 }
 
+.bsd-70 {
+  left: calc(70% - 5px);
+}
+
+.bsp-70 {
+  width: 70%;
+}
+
 .bsd-60 {
   left: calc(60% - 5px);
 }
 
 .bsp-60 {
   width: 60%;
+}
+
+.bsd-50 {
+  left: calc(50% - 5px);
+}
+
+.bsp-50 {
+  width: 50%;
 }
 
 .bsd-40 {
@@ -75,12 +96,28 @@ img {
   width: 40%;
 }
 
-.bsd-25 {
-  left: calc(25% - 5px);
+.bsd-30 {
+  left: calc(30% - 5px);
 }
 
-.bsp-25 {
-  width: 25%;
+.bsp-30 {
+  width: 30%;
+}
+
+.bsd-20 {
+  left: calc(20% - 5px);
+}
+
+.bsp-20 {
+  width: 20%;
+}
+
+.bsd-10 {
+  left: calc(10% - 5px);
+}
+
+.bsp-10 {
+  width: 10%;
 }
 
 .title-small {
@@ -441,13 +478,13 @@ footer form textarea {
 }
 @media (max-width: 767px) {
   footer form input,
-footer form textarea {
+  footer form textarea {
     min-width: 400px;
   }
 }
 @media (max-width: 480px) {
   footer form input,
-footer form textarea {
+  footer form textarea {
     min-width: 250px;
   }
 }
