@@ -36,7 +36,7 @@ let projects = [
     title: "ToDo",
     display: false,
     link: "http://thomas-dauriac.fr:4001",
-    img: "./assets/todo.jpg",
+    img: "./assets/todo-list.jpg",
     content: `Pour ce projet ToDo, le javascript m'offre de nouvelles possibilités. 
     J'ai pu ici manipuler le DOM, par la création d'une "ToDo List" sur laquelle vous pourrez tester un panel de quelques fonctionnalités. 
     De plus, j'ai pu commencer à travailler une configuration projet avec Webpack et Babel plus en adéquation avec celle retrouvée en milieu professionnel.`,
